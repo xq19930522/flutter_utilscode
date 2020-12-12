@@ -1,0 +1,193 @@
+name: flutterpicker
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+  # 加密 https://pub.flutter-io.cn/packages/encrypt
+  encrypt: ^4.0.2
+  # toast https://pub.flutter-io.cn/packages/jhtoast
+  jhtoast: ^0.5.0
+
+
+  # 网络请求 https://pub.dev/packages/dio#-installing-tab-
+  dio: ^3.0.10
+  #  # 网络请求 https://pub.dev/packages/dio_http_cache#-installing-tab-
+  #  dio_http_cache: ^0.2.5
+  # 监测网络状态 https://pub.dev/packages/connectivity
+  connectivity: ^0.4.9
+  # 图片缓存 https://pub.flutter-io.cn/packages/cached_network_image
+  cached_network_image: ^2.3.1
+  # 屏幕参数适配 https://pub.dev/packages/flutter_screenutil
+  #flutter_screenutil: ^2.3.1
+  # 处理键盘事件 https://pub.flutter-io.cn/packages/keyboard_actions
+  keyboard_actions: ^3.3.0+1
+  # webview https://pub.flutter-io.cn/packages/webview_flutter#-installing-tab-
+  webview_flutter: ^0.3.22+1
+  # 路由管理 https://pub.flutter-io.cn/packages/fluro
+  fluro: ^1.7.7
+
+  # 弹框 https://pub.dev/packages/fluttertoast#-installing-tab-
+  fluttertoast: ^7.0.4
+  # 组件库 https://www.flui.xin/guide.html
+  flui: 0.9.2
+  # 加载框 https://pub.flutter-io.cn/packages/flutter_progress_dialog
+  flutter_progress_dialog: ^0.1.0
+  # 加载框 https://pub.flutter-io.cn/packages/oktoast#-readme-tab-
+  oktoast: 2.3.2
+
+  # 下拉刷新 https://pub.flutter-io.cn/packages/pull_to_refresh
+  pull_to_refresh: ^1.6.0
+  # 下拉刷新 https://pub.flutter-io.cn/packages/flutter_easyrefresh
+  flutter_easyrefresh: 2.1.5
+  # 底部弹出 日期选择器 单列多列  https://pub.dev/packages/flutter_picker
+  flutter_picker: 1.1.5
+
+
+  # 时间格式转换 https://pub.dev/packages/date_format
+  date_format: 1.0.8
+  # 图片手势 https://pub.dev/packages/photo_view
+  photo_view: 0.6.0
+  # 相册多图选择 https://pub.dev/packages/photo
+  photo: 0.4.8
+  # 相机拍照，单图选择 https://pub.flutter-io.cn/packages/image_picker
+  image_picker: ^0.6.7+7
+  #  multi_image_picker: ^4.6.1
+
+  # 获取信息 https://pub.dev/packages/package_info
+  package_info: ^0.4.3
+  # 获取设备信息 https://pub.flutter-io.cn/packages/device_info
+  device_info: ^0.4.2+7
+  # 网页打开工具 https://pub.dev/packages/url_launcher#-readme-tab-
+  url_launcher: ^5.5.2
+  # Flutter 常用工具类库（本地化 屏幕适配） https://pub.flutter-io.cn/packages/flustars
+  flustars: ^0.3.3
+  # EChart 图表（缩放手势冲突） https://pub.flutter-io.cn/packages/flutter_echarts
+  flutter_echarts: ^1.3.5
+  # 图表（没有提示栏) https://pub.flutter-io.cn/packages/mp_chart
+  mp_chart: ^0.2.2 #latest version
+  # 图表 （没有图例） https://pub.flutter-io.cn/packages/charts_flutter#-installing-tab-
+  charts_flutter: ^0.9.0
+  # 小红点 https://pub.flutter-io.cn/packages/badges
+  badges: ^1.1.4
+  # sq https://pub.dev/packages/sqflite
+  sqflite: ^1.3.1
+  # 本地化存储 https://pub.dev/packages/shared_preferences
+  shared_preferences: ^0.5.10
+  # 二维码生成 https://pub.dev/packages/qr_flutter
+  qr_flutter: ^3.2.0
+  # 二维码扫描 https://pub.dev/packages/barcode_scan
+  barcode_scan: ^3.0.1
+  # 状态管理 https://pub.dev/packages/provider
+  provider: ^4.3.2+2
+  # 轮播 https://pub.dev/packages/flutter_swiper
+  flutter_swiper: ^1.1.6
+  # 轮播 https://pub.flutter-io.cn/packages/carousel_slider
+  carousel_slider: ^2.2.1
+  # 列表悬浮头 https://pub.flutter-io.cn/packages/sticky_headers
+  sticky_headers: ^0.1.8+1
+  # 进度条 https://pub.flutter-io.cn/packages/percent_indicator
+  percent_indicator: ^2.1.5
+  # 侧滑删除 https://pub.flutter-io.cn/packages/flutter_slidable
+  flutter_slidable: ^0.5.7
+  # 城市选择列表 https://pub.flutter-io.cn/packages/azlistview
+  azlistview: ^1.0.1
+  # 汉字转拼音 https://pub.flutter-io.cn/packages/lpinyin
+  lpinyin: ^1.0.9
+  #屏幕适配
+  flutter_screenutil: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+    - assets/images/common/
+    - assets/images/newFeature/
+    - assets/images/picture/
+    - assets/images/popMenus/
+    - assets/images/tab/
+    - assets/images/service/
+    - assets/images/demos/
+    - assets/wechat/
+    - assets/wechat/home/
+    - assets/wechat/contacts/
+    - assets/wechat/contacts/add/
+    - assets/wechat/discover/
+    - assets/wechat/discover/friends/
+    - assets/wechat/mine/
+
+    #假数据
+    - lib/res/china.json
+    - lib/res/wx_contacts.json
+    - lib/res/wx_motion_top.json
+    - lib/res/wx_friends_circle.json
+
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
